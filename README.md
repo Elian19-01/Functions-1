@@ -164,3 +164,62 @@ def multiply(numbers):
     return total  
 print(multiply((1, 2, 3, 4, 5, 6)))
 ```
+## ex04.py
+```python
+def string_reverse(str1):
+
+    rstr1 = ''
+    index = len(str1)
+    while index > 0:
+        rstr1 += str1[ index - 1 ]
+        index = index - 1
+    return rstr1
+print(string_reverse('1234abcd'))
+
+```
+## ex04.c
+```c
+#include <iostream>
+#include <cstring>
+
+using namespace std;
+
+void inv (char cad[], int wide)
+{
+    int wide2=wide;
+    char inv[wide2];
+
+    for (int x=0, y=wide; x<wide && y>=0; x++, y--)
+    {
+        inv[x]=cadena[y];
+    }
+    cout<<"> "<<cadena<<endl;
+    cout<<endl<<"> "<<inv<<endl<<endl;
+    return;
+}
+
+int main ()
+{
+
+    char opcion;
+    string word;
+    int long, long2;
+
+    while (opcion!='n')
+    {
+        system ("cls");
+        cout<<"> Ejercicio 6"<<endl<<endl;
+        cout<<"> Ingrese una palabra: ";
+        cin>>palabra;
+        longitud=palabra.length();
+
+        char cadena[palabra.size()+1];
+        strcpy(cadena, palabra.c_str());
+
+        longitud2=strlen(cadena);
+
+        invertidor (cadena,long2);
+
+    return 0;
+}
+```

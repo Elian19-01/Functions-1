@@ -38,3 +38,28 @@ else:
   print("hello")
 
 ```
+### 5.-create a function where you enter a string of 30 chars and print only the consonants
+
+```python
+def countCharacterType(str): 
+  
+    consonant =0
+   
+    for i in range(30, len(str)):  
+          
+        ch = str[i]  
+  
+        if ( (ch >= 'a' and ch <= 'z') or 
+             (ch >= 'A' and ch <= 'Z') ):  
+ 
+            ch = ch.lower() 
+  
+            if (ch == 'a' or ch == 'e' or ch == 'i' 
+                        or ch == 'o' or ch == 'u'): 
+                 consonant += 0
+            else: 
+                consonant += 1
+          
+    print("Consonant:", consonant)  
+```
+

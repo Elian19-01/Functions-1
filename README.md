@@ -286,3 +286,123 @@ def string_test(s):
 ```c
 
 ```
+## ex09.py
+```python
+def prime-test(n):
+    if (n==1):
+        return False
+    elif (n==2):
+        return True;
+             for s in range(2,n):
+            if(n % s==0):
+                return False
+        return True            
+print(prime-test(3))
+```
+
+## ex09.c
+```c
+#include<stdio.h>  
+int main(){    
+int n,i,m=0,flag=0;    
+printf("Enter the number to check prime:");    
+scanf("%d",&n);    
+m=n/2;    
+for(i=2;i<=m;i++)    
+{    
+if(n%i==0)    
+{    
+printf("Number is not prime");    
+flag=1;    
+break;    
+}    
+}    
+if(flag==0)    
+printf("Number is prime");     
+return 0;  
+ }    
+```
+
+## ex10.py
+```python
+
+```
+
+## ex10.c
+```c
+
+```
+
+## ex11.py
+```python
+def perfect_number(n):
+    sum = 0
+    for x in range(1, n):
+        if n % x == 0:
+            sum += x
+    return sum == n
+print(perfect_number(6))
+```
+
+## ex11.c
+```c
+# include <stdio.h>   
+
+int main()   
+{   
+ int i, Number, Sum = 0 ;   
+  
+ printf("\n Please Enter any number \n") ;   
+ scanf("%d", &Number) ;   
+ 
+ for(i = 1 ; i < Number ; i++)   
+  {   
+   if(Number % i == 0)   
+     Sum = Sum + i ;   
+  }    
+
+ if (Sum == Number)   
+    printf("\n %d is a Perfect Number", Number) ;   
+ else   
+    printf("\n%d is not the Perfect Number", Number) ;   
+
+return 0 ;   
+}
+
+```
+
+## ex12.py
+```python
+int i;
+  int len=strlen(string);
+  for(i=len-1; i>=0; i--){
+    if(string[len-i-1]!=string[i]){
+      return 0;
+    }
+  }
+  return 1;
+}
+
+int function1(char string[MAX])
+{
+  int length1 = strlen()
+}
+
+
+int main(void) {
+  char mystring1[MAX] = "This is a string";
+  char mystring2[MAX] = "a string";
+  printf("the value for string 1 is %lu and len10 result is %d \n",strlen(mystring1),len10(mystring1));
+  printf("the value for string 2 is %lu and len10 result is %d \n",strlen(mystring2),len10(mystring2));
+
+  reverse_string(mystring1);
+  printf("the value of palindrome is %d\n",palindrome("01210"));
+
+  return 0;
+}
+```
+
+## ex12.c
+```c
+
+```

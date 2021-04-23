@@ -223,3 +223,66 @@ int main ()
     return 0;
 }
 ```
+## ex05.py
+```python
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+n=int(input("Input a number to compute the factiorial : "))
+print(factorial(n))
+```
+
+## ex05.c
+```c
+
+```
+
+## ex06.py
+```python
+def test_range(n):
+    if n in range(1,11):
+        print( " %s is in the range"(n))
+    else :
+        print("The number is outside the range.")
+ return(0)
+```
+
+## ex06.c
+```c
+
+```
+
+## ex07.py
+```python
+def string_test(s):
+    d={"upper":0, "lower":0}
+    for l in s:
+        if l.isupper():
+           d["upper"]+=1
+        elif c.islower():
+           d["lower"]+=1
+        else:
+           pass
+    print ("Original String is  : ", s)
+    print ("No. of Upper characters : ", d["upper"])
+    print ("No. of Lower Characters : ", d["lower"])
+
+```
+
+
+## ex07.c
+```c
+
+```
+
+## ex08.py
+```python
+
+```
+
+## ex08.c
+```c
+
+```

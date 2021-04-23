@@ -24,3 +24,17 @@ def no(l1, l2):
    
     return no(l1, l2)
 ```
+### 4.-create a function where you insert a string and return 1 if is palindromic or not, it means that returns 1 if is palindrome ("ala"), return 0 if is not ("hello")
+```python
+igual, aux = 0, 0
+text = input("Enter the word you want to evaluater: ")
+for ind in reversed(range(0, len(text))):
+  if text[ind].lower() == text[aux].lower():
+    igual += 1
+  aux += 1
+if len(text) == igual:
+  print("ala")
+else:
+  print("hello")
+
+```
